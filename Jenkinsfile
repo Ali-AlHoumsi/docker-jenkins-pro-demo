@@ -57,17 +57,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        success {
-            mail to: "${EMAIL_RECIPIENTS}",
-                 subject: "Jenkins Pipeline Succeeded: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "الـ Pipeline نجح بنجاح!"
-        }
-        failure {
-            mail to: "${EMAIL_RECIPIENTS}",
-                 subject: "Jenkins Pipeline Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "الـ Pipeline فشل. تحقق من السجلات في Jenkins."
-        }
-    }
 }
