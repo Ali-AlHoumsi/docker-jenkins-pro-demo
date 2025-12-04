@@ -1,0 +1,25 @@
+الفكرة العامة للمشروع
+
+ستقوم بعمل:
+
+Node.js REST API بسيط (يرجع JSON عند زيارة /api)
+
+Dockerfile لبناء Container للتطبيق
+
+Jenkinsfile لعمل Pipeline يحتوي على:
+
+Checkout من GitHub
+
+Build Docker image
+
+Run Tests
+
+Push image إلى Docker Hub
+
+Deploy (تشغيل الكونتينر داخل Jenkins server أو Node آخر)
+
+رفع المشروع إلى GitHub
+
+Jenkins يقوم بعمل Build وتشغيل التطبيق فعلياً
+
+يمكنك زيارة التطبيق من المتصفح بعد نشره.
